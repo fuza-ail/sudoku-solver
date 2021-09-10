@@ -28,14 +28,19 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h2 {
+  margin: 0;
+  padding: 1rem;
+}
 button {
   position: relative;
   cursor: pointer;
   margin: 1rem;
   padding: 5px 20px;
   border: 1px black solid;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 255, 255);
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 button::before {
   content: "";
@@ -54,5 +59,11 @@ button:hover::before {
 
 button:hover {
   color: white;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
+  z-index: -100;
 }
 </style>
