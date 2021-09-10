@@ -55,7 +55,10 @@ export default {
       if (e.target.value.length > 1) {
         const value = e.target.value.substr(e.target.value.length - 1);
         this.inputs[x][y].val = value;
+      } else {
+        this.inputs[x][y].val = e.target.value;
       }
+
       // console.log(e.target.value, x, y);
     },
     generateSolution() {
