@@ -78,6 +78,8 @@ export default {
       }, this.time);
     },
     reset() {
+      this.step = 0;
+      this.totalStep = 0;
       this.isButtonDisabled = false;
       this.inputs = this.generateArray();
       this.isSudokuValid = true;
